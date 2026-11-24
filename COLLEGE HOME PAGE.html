@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVERSAL COLLEGE</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        header {
+            background: #082b55;
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h2 {
+            font-size: 24px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffc107;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 500px;
+            background:
+            linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+            url("https://images.unsplash.com/photo-1562774053-701939374585?w=1600");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            background: #ffc107;
+            color: #082b55;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Common Section */
+        section {
+            padding: 55px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            color: #082b55;
+            margin-bottom: 25px;
+        }
+
+        /* About */
+        .about p {
+            max-width: 850px;
+            margin: auto;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        /* Courses */
+        .course-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .course {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px #00000015;
+            transition: .3s;
+        }
+
+        .course:hover {
+            transform: translateY(-8px);
+        }
+
+        .course h3 {
+            color: #082b55;
+            margin-bottom: 12px;
+        }
+
+        /* Gallery */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery-container img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: .3s;
+        }
+
+        .gallery-container img:hover {
+            transform: scale(1.04);
+        }
+
+        /* Facilities */
+        .facilities {
+            background: #e7eff8;
+        }
+
+        .facility-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .facility {
+            background: white;
+            padding: 25px;
+            width: 220px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        /* Contact */
+        .contact {
+            background: #082b55;
+            color: white;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        .contact p {
+            margin: 12px;
+        }
+
+        footer {
+            background: #041b35;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        @media(max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 7px;
+                display: inline-block;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h2>ABC COLLEGE</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#courses">Courses</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <div class="hero" id="home">
+        <h1>Welcome to ABC Engineering College</h1>
+        <p>Learn Today, Lead Tomorrow</p>
+        <a href="#about" class="btn">Explore More</a>
+    </div>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <h2>About Our College</h2>
+        <p>
+            ABC Engineering College is committed to providing
+            quality education and developing innovative skills
+            among students. We provide excellent infrastructure,
+            experienced faculty, modern laboratories and a
+            supportive learning environment.
+        </p>
+    </section>
+
+    <!-- Courses -->
+    <section id="courses">
+        <h2>Our Courses</h2>
+
+        <div class="course-container">
+            <div class="course">
+                <h3>Computer Science</h3>
+                <p>Programming, AI, Data Science and Technology.</p>
+            </div>
+
+            <div class="course">
+                <h3>Electronics</h3>
+                <p>Communication and Electronic Systems.</p>
+            </div>
+
+            <div class="course">
+                <h3>Mechanical</h3>
+                <p>Machines, Manufacturing and Design.</p>
+            </div>
+
+            <div class="course">
+                <h3>Civil Engineering</h3>
+                <p>Construction and Infrastructure Development.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+        <h2>College Gallery</h2>
+
+        <div class="gallery-container">
+            <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=600" alt="College building">
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600" alt="Students">
+            <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=600" alt="Library">
+            <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=600" alt="Laboratory">
+        </div>
+    </section>
+
+    <!-- Facilities -->
+    <section class="facilities">
+        <h2>Our Facilities</h2>
+
+        <div class="facility-list">
+            <div class="facility">📚 Digital Library</div>
+            <div class="facility">💻 Computer Labs</div>
+            <div class="facility">🏏 Sports Ground</div>
+            <div class="facility">🚌 Transportation</div>
+            <div class="facility">🏠 Hostel Facility</div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>📍 Address: ABC Engineering College, Andhra Pradesh</p>
+        <p>📧 Email: info@abccollege.edu</p>
+        <p>📞 Phone: +91 9876543210</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 ABC Engineering College. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
